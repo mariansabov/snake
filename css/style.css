@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 800px;
+}
+
+.game-header {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    background-color: grey;
+    margin-top: 50px;
+    color: white;
+    padding: 0 20px 0 20px;
+    margin-bottom: -19px;
+    flex-direction: row;
+}
+
+.game-settings {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100px;
+    height: 40px;
+}
+
+.game-apple, .game-snake {
+    display: flex;
+    flex-direction: row;
+}
+
+.game-apple-img, .game-snake-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+img {
+    height: 12px;
+}
+
+.game-apple-color, .game-snake-color {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#canvas-header {
+    margin-bottom: -4px;
+}

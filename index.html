@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Snake</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="game-header">
+            <p class="game-score"></p>
+            <div class="game-settings">
+                <div class="game-apple">
+                    <div class="game-apple-color">
+                        <input type="radio"  name="apple-color" id="ac1" onchange="onAppleChange(this)">
+                        <input type="radio"  name="apple-color" id="ac2" onchange="onAppleChange(this)">
+                        <input type="radio"  name="apple-color" id="ac3" onchange="onAppleChange(this)">
+                    </div>
+                    <div class="game-apple-img">
+                        <img src="img/redApple.png" alt="">
+                        <img src="img/greenApple.png" alt="">
+                        <img src="img/randomApple.png" alt="">
+                    </div>
+                </div>
+
+                <div class="game-snake">
+                    <div class="game-snake-color">
+                        <input type="radio"  name="snake-color" id="sc1" onchange="onSnakeChange(this)">
+                        <input type="radio"  name="snake-color" id="sc2" onchange="onSnakeChange(this)">
+                        <input type="radio"  name="snake-color" id="sc3" onchange="onSnakeChange(this)">
+                    </div>
+                    <div class="game-snake-img">
+                        <img src="img/snakeColorBlue.png" alt="">
+                        <img src="img/snakeColorGreen.png" alt="">
+                        <img src="img/snakeColorPurple.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <canvas id="canvas-header" width="0" height="0"></canvas>
+        <canvas id="canvas" width="800" height="800"></canvas>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
